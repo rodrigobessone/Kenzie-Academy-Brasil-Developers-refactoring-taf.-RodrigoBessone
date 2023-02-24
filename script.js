@@ -57,9 +57,13 @@ function isSwimValid(swimDistance, swimTime, diveTime) {
 
 
 
-function areCandidateResultsValid(gender, height, barReps, barSeconds, abs, runDistance, runTime, swimDistance, swimTime, diveTime) {
-    if (isHeightValid(gender, height) && isAbsValid(abs) && isBarValid(gender, barReps, barSeconds) &&
-        isRunValid(gender, runDistance, runTime) && isSwimValid(swimDistance, swimTime, diveTime)) {
+function areCandidateResultsValid(gender, height, barReps, barSeconds, abs,
+    runDistance, runTime, swimDistance, swimTime, diveTime) {
+    if (isHeightValid(gender, height) &&
+        isAbsValid(abs) &&
+        isBarValid(gender, barReps, barSeconds) &&
+        isRunValid(gender, runDistance, runTime) &&
+        isSwimValid(swimDistance, swimTime, diveTime)) {
         passed = true
     } else {
         passed = false
